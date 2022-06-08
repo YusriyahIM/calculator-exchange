@@ -60,6 +60,19 @@ function allFunction(event) {
   toShowPpn.textContent = "Rp " + parseFloat(ppn.toFixed(0)).toLocaleString();
   toShowPph.textContent = "Rp " + parseFloat(pph.toFixed(0)).toLocaleString();
   toShowTotal.textContent = "Rp " + parseFloat(alltotal.toFixed(0)).toLocaleString();
+
+  const history = {
+    toShowNama: nama,
+    toShowResult: parseFloat(result.toFixed(0)).toLocaleString(),
+    toShowBeamasuk: parseFloat(beamasuk.toFixed(0)).toLocaleString(),
+    toShowPpn: parseFloat(ppn.toFixed(0)).toLocaleString(),
+    toShowPph: parseFloat(pph.toFixed(0)).toLocaleString(),
+    toShowBerat: berat.toLocaleString("en"),
+    toShowTotal: parseFloat(alltotal.toFixed(0)).toLocaleString(),
+  };
+
+  putHistory(history);
+  renderHistory();
 }
 
 btn.addEventListener("click", allFunction);
