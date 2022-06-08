@@ -54,7 +54,7 @@ function allFunction(event) {
   toShowSecond.textContent = "Rp";
 
   toShowResult.textContent = "Rp " + parseFloat(result.toFixed(0)).toLocaleString();
-  toShowBerat.textContent = "Rp " + berat.toLocaleString("en");
+  toShowBerat.textContent = "Rp " + berat.toLocaleString();
   toShowNama.textContent = nama;
   toShowBeamasuk.textContent = "Rp " + parseFloat(beamasuk.toFixed(0)).toLocaleString();
   toShowPpn.textContent = "Rp " + parseFloat(ppn.toFixed(0)).toLocaleString();
@@ -67,7 +67,7 @@ function allFunction(event) {
     toShowBeamasuk: parseFloat(beamasuk.toFixed(0)).toLocaleString(),
     toShowPpn: parseFloat(ppn.toFixed(0)).toLocaleString(),
     toShowPph: parseFloat(pph.toFixed(0)).toLocaleString(),
-    toShowBerat: berat.toLocaleString("en"),
+    toShowBerat: berat.toLocaleString(),
     toShowTotal: parseFloat(alltotal.toFixed(0)).toLocaleString(),
   };
 
